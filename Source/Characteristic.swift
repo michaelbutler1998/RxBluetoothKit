@@ -45,6 +45,7 @@ public class Characteristic {
             return nil
         }
         let service = Service(peripheral: peripheral, service: _service)
+        self.init(characteristic: characteristic, service: service)
     }
 
     /// Function that triggers descriptors discovery for characteristic.
