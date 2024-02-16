@@ -35,6 +35,7 @@ public class Descriptor {
 
         let service = Service(peripheral: peripheral, service: _service)
         let characteristic = Characteristic(characteristic: _characteristic, service: service)
+        self.init(descriptor: descriptor, characteristic: characteristic)
     }
 
     /// Function that allow to observe writes that happened for descriptor.
