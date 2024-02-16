@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "RxBluetoothKit",
+    name: "RxBluetoothKit_Airthings",
     platforms: [
         .macOS(.v10_13), .iOS(.v9), .tvOS(.v11), .watchOS(.v4)
     ],
     products: [
-        .library(name: "RxBluetoothKit", targets: ["RxBluetoothKit"])
+        .library(name: "RxBluetoothKit_Airthings", targets: ["RxBluetoothKit_Airthings"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "5.1.1"))
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5"))
     ],
     targets: [
         .target(
-                name: "RxBluetoothKit",
+                name: "RxBluetoothKit_Airthings",
                 dependencies: [
                     "RxSwift"
                 ],
